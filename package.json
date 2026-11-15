@@ -1,0 +1,31 @@
+{
+  "name": "cafeteria-lab-api",
+  "version": "1.0.0",
+  "description": "Week 6 lab: write endpoints with validation for the Strathmore Cafeteria Ordering System API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest",
+    "test:partner": "jest --config partner-tests/jest.config.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "supertest": "^7.3.2"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/partner-tests/",
+      "/server/",
+      "/test-support/"
+    ]
+  }
+}
